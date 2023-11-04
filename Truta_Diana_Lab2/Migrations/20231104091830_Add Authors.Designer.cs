@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Truta_Diana_Lab2.Data;
 
@@ -11,9 +12,10 @@ using Truta_Diana_Lab2.Data;
 namespace Truta_Diana_Lab2.Migrations
 {
     [DbContext(typeof(Truta_Diana_Lab2Context))]
-    partial class Truta_Diana_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231104091830_Add Authors")]
+    partial class AddAuthors
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
